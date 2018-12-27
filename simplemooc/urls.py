@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from simplemooc.core import views #Importando a função home do arquivo views.py
+
 urlpatterns = [
+    path('', views.home, name='home'), #Para URL vazia, execute a função simplemooc.core.view.home chamada home
     path('admin/', admin.site.urls),
 ]
