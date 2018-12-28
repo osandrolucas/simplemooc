@@ -19,6 +19,7 @@ from django.urls import path
 from simplemooc.core import views #Importando a função home do arquivo views.py
 
 urlpatterns = [
-    path('', views.home, name='home'), #Para URL vazia, execute a função simplemooc.core.view.home chamada home
+    path('', views.home, name='home'),#Para URL vazia, execute a função simplemooc.core.view.home chamada home
+    path('contato/', views.contact, name='contact'),
     path('admin/', admin.site.urls),
 ]

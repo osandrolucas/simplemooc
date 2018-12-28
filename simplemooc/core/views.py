@@ -4,5 +4,8 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request, 'home.html', {'usuario': 'Sandro Lucas Azevedo Ferreira'}) #Renderiza e Substitui variável
+    return render(request, 'home.html') #Renderiza e Substitui variável
    #HttpResponse('Hello Word. É só fazer certo que funciona!')  #Sempre temos que retornar um httpresponse
+
+def contact(request):
+    return render(request, 'contact.html')
