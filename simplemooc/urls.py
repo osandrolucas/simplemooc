@@ -6,7 +6,7 @@ from simplemooc.courses import views #Importando a função home do arquivo view
 
 urlpatterns = [
     path('', views.index, name='home'),#Para URL vazia, execute a função simplemooc.core.view.home chamada home
-    path('cursos/', views.courses(), namspace='index'),
-    path('contato/', views.contact, name='contact'),
+    #path('cursos/', views.courses(), namspace='cursos'),
+    #path('contato/', views.contact, name='contact'),
     path('admin/', admin.site.urls),
 ]
